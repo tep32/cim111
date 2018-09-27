@@ -1,20 +1,20 @@
 #name{
        text-align: center;
        background-color: black;
-       color: mediumspringgreen
+       color: mediumspringgreen;
      }
 
   #school{
                   text-align: center;
                   background-color: mediumpurple;
-                  color: black
+                  color: black;
                 }
   #skills{
                         text-align: left;
                         background-color: orange;
-                        color: black
+                        color: black;
                         /* <percentage> values */
-font-size: 150%;
+                        font-size: 150%;
 
                       }
 
@@ -22,19 +22,19 @@ font-size: 150%;
     #work{
                   text-align: left;
                     background-color: fuchsia;
-                      color: black
+                      color: black;
                                                       }
 
   #contact{
      text-align: left;
    background-color: orchid;
-   color: black
+   color: black;
  }
 
   #box{
      text-align: center;
      background-color: mediumspringgreen;
-       color: black
+       color: black;
 
       }
 
