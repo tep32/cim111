@@ -1,0 +1,43 @@
+#name{
+       text-align: center;
+       background-color: black;
+       color: mediumspringgreen
+     }
+
+  #school{
+                  text-align: center;
+                  background-color: mediumpurple;
+                  color: black
+                }
+  #skills{
+                        text-align: left;
+                        background-color: orange;
+                        color: black
+                        /* <percentage> values */
+font-size: 150%;
+
+                      }
+
+
+    #work{
+                  text-align: left;
+                    background-color: fuchsia;
+                      color: black
+                                                      }
+
+  #contact{
+     text-align: left;
+   background-color: orchid;
+   color: black
+ }
+
+  #box{
+     text-align: center;
+     background-color: mediumspringgreen;
+       color: black
+
+      }
+
+      #colorChange{
+        color: magenta;
+      }
