@@ -3,34 +3,120 @@
 <html>
 
 <head>
-  <title>Responsive</title>
+  <title>Taipie</title>
+
+
+         <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+         <link rel="stylesheet" href="css/responsivemobile.css" media="only screen and (max-width: 600px)">
+
+
+<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
   <style>
 
+  a{
+    text-decoration: none;
+    color:#FFC300;
+    font-weight: 900;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  a:hover{
+    color: #D0FF00;
+    text-decoration: none;
+    background-color: black
+  }
+
     header, footer{
-        background-color: purple;
+        background-color: #FFC300;
         width: 80%;
         height: 100px;
         margin: 0 auto;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
     }
 
     .cols{
       width: 49.5%;
       height: 400px;
-      background-color: red;
+      background-color: black;
       display: inline-block;
       vertical-align: top;
+      text-align: center;
     }
 
-@media only screen and (min-width: 960px) {
+
+    #col2{
+      grid-area: col2;
+      background-color:#FFC7F0    ;
+      height: auto;
+      text-align: center;
+      background-color: #581845;
+      color: #FFC300;
+      font-family:'Permanent Marker', cursive;
+      font-weight: lighter;
+    }
+
+    #grid2{
+      display: grid;
+      grid-template-areas: "col3 col4 col5";
+      grid-template-columns: 50% 50%;
+      grid-auto-rows: 1fr;
+      margin-top: 10px;
+    }
+
+
+    nav{
+        width: 325px;
+        height: 50px;
+        background-color: #581845;
+        margin: 0 auto;
+    }
+
+    nav ul{
+      margin-left: -30px
+    }
+
+    nav ul li{
+      list-style: none;
+      display: inline-block;
+    /*width: 100px; */
+    text-align: center;
+    margin-right: 20px;
+    }
+
+    .images{
+      height: 160px;
+      display: inline-block;
+      margin: 0 auto;
+
+    }
+
+    #topImage{
+      width: 31%;
+      height: auto;
+      display: inline-block;
+      padding-left: 13px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+
+
+@media only screen and (min-width: 10px) {
   body{
-    background-color: orange;
+    background-color: #581845;
 
   }
 }
 
 @media only screen and (max-width: 600px) {
   body{
-    background-color: green;
+    background-color:#581845 ;
 
   }
 }
@@ -41,9 +127,14 @@
       margin-bottom: 10px;
     }
 
+    h1{
+      font-family:'Permanent Marker', cursive;;
+      font-weight: 900;
+    }
+
 
     main{
-      background-color: yellow;
+      background-color: #B20A36  ;
       width: 80%;
       height: auto;
       margin: 0 auto;
@@ -54,13 +145,42 @@
     </head>
 
     <body>
-    <header></header>
+      <header>
+          <h1>Nightcrawler</h1>
+          <nav>
+              <ul>
+                  <li><a href="responsive.html">Home</a></li>
+                  <li><a href="">Daybreaker</a></li>
+                  <li><a href="">Paradox</a></li>
+
+
+              </ul>
+
+              </nav>
+
+
+      </header>
+
     <main>
+
+        <section id="grid1">
+        <div id="col1">
+          <img id="topImage" src="img/night.jpg"/>
+          <img id="topImage" src="img/moon.jpg"/>
+          <img id="topImage" src="img/nightnight.jpg"/>
+        </div>
+
         <div class="cols"></div>
-        <div class="cols"></div>
-    </main>
+        <section id="grid2">
+        <div id="col2">
+          <p <span class="col2">When I'm not sleeping, I'm taking pictures. <br>
+            Here are some images captured at night all over the world.<br>
+            Enjoy:)</p>
+            </div>
+
+
     <footer></footer>
 
-
+</body>
 
 </html>

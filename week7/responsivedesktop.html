@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Taipie</title>
+
+
+       <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+       <link rel="stylesheet" href="css/responsivemobile.css" media="only screen and (max-width: 600px)">
+
+
+  <style>
+
+    nav{
+      width: 325px;
+      height: 50px;
+      background-color: red;
+      margin: 0 auto;
+    }
+
+
+
+    header, footer{
+        background-color: purple;
+        width: 80%;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .cols{
+      width: 49.5%;
+      height: 400px;
+      background-color: red;
+      display: inline-block;
+      vertical-align: top;
+    }
+    #grid1{
+      display: grid;
+      grid-template-areas: "col1 col2";
+      grid-template-rows: 1fr;
+      grid-template-columns: 50% 50%;
+      text-align: center;
+
+    }
+
+    #col1{
+      grid-area: col1;
+      background-color:#FFC7F0  ;
+      height: auto;
+    }
+
+    #col2{
+      grid-area: col2;
+      background-color:#FFC7F0    ;
+      height: auto;
+    }
+
+    #grid2{
+      display: grid;
+      grid-template-areas: "col3 col4 col5";
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-auto-rows: 1fr;
+      margin-top: 10px;
+    }
+
+    #col3{
+      grid-area: col3;
+      background-color: #CCFFFF;
+      height: 200px;
+    }
+
+    #col4{
+      grid-area: col4;
+      background-color: #CCFFFF;
+      height: 200px;
+    }
+
+
+    #col5{
+      grid-area: col5;
+      background-color: #CCFFFF;
+      height: 200px;
+    }
+
+    .images{
+      height: 160px;
+      display: block;
+      margin: 10px auto;
+
+    }
+
+@media only screen and (min-width: 960px) {
+  body{
+    background-color: orange;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-color: green;
+
+  }
+}
+
+    .cols{
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+
+    main{
+      background-color: yellow;
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+
+    </style>
+    </head>
+
+    <body>
+    <header></header>
+    <main>
+      <section id="grid1">
+          <div id="col1">
+          <img class="images"
+          src="https://c6.staticflickr.com/5/4025/4215837259_cb38f22399_o.jpg">
+          <a href="https://www.flickr.com/photos/kinjengsubmiter/4215837259">"pug-puppies"</a> by <a href="https://www.flickr.com/people/kinjengsubmiter/">Kinjeng Submiter</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0"> CC BY 2.0 </a>>
+          </div>
+          <div id="col2"></div>
+        </section>
+
+        <section id="grid2">
+    <div id="col3"></div>
+    <div id="col4"></div>
+    <div id="col5"></div>
+
+        </section>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
