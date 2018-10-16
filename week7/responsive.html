@@ -18,122 +18,6 @@
 
   <style>
 
-  a{
-    text-decoration: none;
-    color:#FFC300;
-    font-weight: 900;
-    font-family: 'Roboto Mono', monospace;
-  }
-
-  a:hover{
-    color: #D0FF00;
-    text-decoration: none;
-    background-color: black;
-  }
-
-    header, footer{
-        background-color: #FFC300;
-        width: 80%;
-        height: 100px;
-        margin: 0 auto;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .cols{
-      width: 49.5%;
-      height: 400px;
-      background-color: black;
-      display: inline-block;
-      vertical-align: top;
-      text-align: center;
-    }
-
-
-    #col2{
-      grid-area: col2;
-      background-color:#FFC7F0    ;
-      height: auto;
-      text-align: center;
-      background-color: #581845;
-      color: #FFC300;
-      font-family:'Permanent Marker', cursive;
-      font-weight: lighter;
-    }
-
-    #grid2{
-      display: grid;
-      grid-template-areas: "col3 col4 col5";
-      grid-template-columns: 50% 50%;
-      grid-auto-rows: 1fr;
-      margin-top: 10px;
-    }
-
-
-    nav{
-        width: 325px;
-        height: 50px;
-        background-color: #581845;
-        margin: 0 auto;
-    }
-
-    nav ul{
-      margin-left: -30px
-    }
-
-    nav ul li{
-      list-style: none;
-      display: inline-block;
-    /*width: 100px; */
-    text-align: center;
-    margin-right: 20px;
-    }
-
-
-    #topImage{
-      width: 31%;
-      height: auto;
-      display: inline-block;
-      padding-left: 13px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-
-
-@media only screen and (min-width: 10px) {
-  body{
-    background-color: #581845;
-
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  body{
-    background-color:#581845 ;
-
-  }
-}
-
-    .cols{
-      display: block;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    h1{
-      font-family:'Permanent Marker', cursive;;
-      font-weight: 900;
-    }
-
-
-    main{
-      background-color: #B20A36  ;
-      width: 80%;
-      height: auto;
-      margin: 0 auto;
-    }
-
 
     </style>
     </head>
@@ -158,23 +42,18 @@
     <main>
 
         <section id="grid1">
-        <div id="col1">
-          <img id="topImage" src=
-        "img/night.JPG"/>
-          <img id="topImage" src=
-        "img/moon.JPG"/>
-          <img id="topImage" src=
-        "img/nightnight.JPG"/>
+        <div id="col1"><img id="topImage" src="img/night.JPG"/>  </div>
+        <div id="col2"><img id="topImage" src="img/night.JPG"/>  </div>
+        <div id="col3"><img id="topImage" src="img/night.JPG"/>  </div>
 
-        </div>
 
-        <div class="cols"></div>
-        <section id="grid2">
-        <div id="col2">
-          <p <span class="col2">When I'm not sleeping, I'm taking pictures. <br>
-            Here are some images captured at night all over the world.<br>
-            Enjoy:)</p>
-            </div>
+      </section>
+
+        <h1>When I'm not sleeping, I'm taking pictures.
+Here are some images captured at night all over the world.
+Enjoy:)</h1>
+
+
 
 
     <footer></footer>
