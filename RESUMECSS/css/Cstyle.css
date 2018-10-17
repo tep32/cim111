@@ -11,7 +11,7 @@
                 }
   #skills{
                         text-align: left;
-                        background-color: orange;
+                        background-color: mediumpurple;
                         color: black;
                         /* <percentage> values */
                         font-size: 150%;
@@ -21,13 +21,13 @@
 
     #work{
                   text-align: left;
-                    background-color: fuchsia;
+                    background-color: mediumpurple;
                       color: black;
                                                       }
 
   #contact{
      text-align: left;
-   background-color: orchid;
+   background-color: mediumpurple;
    color: black;
  }
 
@@ -39,5 +39,5 @@
       }
 
       #colorChange{
-        color: magenta;
+        color: mediumpurple;
       }
