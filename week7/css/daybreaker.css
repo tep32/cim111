@@ -1,0 +1,96 @@
+
+
+body{
+  font-family:'Courgette', cursive;
+  background-color: #DCFFBD;
+}
+
+a{
+  text-decoration: none;
+  color:#18D2EE;
+  font-weight: 900;
+  font-family: 'Roboto Mono', monospace;
+  background-color: green;
+}
+
+a:hover{
+  color: #DFBDFF;
+  text-decoration: none;
+}
+
+header, footer{
+    background-color: #BDFFBF;
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-family:'Courgette', cursive;
+
+}
+
+
+    h1{
+      font-family:'Courgette', cursive;
+      font-weight: 500;
+      text-align: center;
+      font-size: 50px;
+      color: black;
+      padding-bottom: 0;
+      color: #BFBDFF;
+    }
+
+
+        h2{
+          font-family:'Courgette', cursive;
+          font-weight: 500;
+          text-align: center;
+          font-size: 30px;
+          color: #BFBDFF;
+          padding-bottom: 0;
+          background-color: #BDFFBF
+
+        }
+
+
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #DCFFBD;
+    margin: center;
+    text-align: center;
+    font-family:'Courgette', cursive;
+
+}
+
+nav ul{
+  /* margin-left: -30px */
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+/*width: 100px; */
+text-align: center;
+margin-right: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30%;
+  padding: 12.5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "img/night.JPG";
+  clear: both;
+  display: table;
+}
+
+.images{
+height: 120px;
+display: block;
+margin: 10px auto;
+    }
