@@ -1,0 +1,136 @@
+body{
+  background-color: black;
+
+}
+
+a{
+  text-decoration: none;
+  color:#FFC300;
+  font-weight: 900;
+  font-family: 'Roboto Mono', monospace;
+}
+
+a:hover{
+  color: #D0FF00;
+  text-decoration: none;
+}
+
+  header, footer{
+      background-color: #FFC300;
+      width: 80%;
+      height: 150px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+
+  }
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+  .column {
+    float: left;
+    width: 30%;
+    padding: 12.5px;
+  }
+
+  /* Clear floats after image containers */
+  .row::after {
+    clear: both;
+    display: table;
+  }
+
+  #grid1{
+    display: grid;
+    grid-template-areas: "col1 col2 col3";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    margin-top: 10px;
+  }
+
+  #col1{
+    grid-area: col1;
+    height: auto;
+  }
+
+  #col2{
+    grid-area: col2;
+    height: auto;
+  }
+
+  #col3{
+    grid-area: col3;
+    height: auto;
+  }
+
+  .images{
+height: 120px;
+display: block;
+margin: 10px auto;
+      }
+
+
+
+
+  nav{
+      width: 100%;
+      height: 100px;
+      background-color: #581845;
+      margin: center;
+      text-align: center;
+
+  }
+
+  nav ul{
+    /* margin-left: -30px */
+  }
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+  /*width: 100px; */
+  text-align: center;
+  margin-right: 20px;
+  }
+
+
+  #topImage{
+    width: 30%;
+    height: auto;
+    align-self: baseline;
+
+  }
+
+
+
+  h1{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    padding-bottom: 0;
+    font-weight: bold;
+  }
+
+  h2{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+    color: #FFC300;
+    background-color: black;
+  }
+
+  h3{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+  }
+
+  main{
+    background-color: black;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }

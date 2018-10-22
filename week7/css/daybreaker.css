@@ -25,9 +25,13 @@ header, footer{
     margin: 0 auto;
     text-align: center;
     font-family:'Courgette', cursive;
+    color: #BFBDFF;
 
 }
 
+footer{
+  font-size: 30px;
+}
 
     h1{
       font-family:'Courgette', cursive;
