@@ -35,7 +35,7 @@
 
     /* Clear floats after image containers */
     .row::after {
-      content:"img/night.jpg";
+      content: "img/night.jpg";
       clear: both;
       display: table;
     }
