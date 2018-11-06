@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Intro to javascript</title>
+
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h1 id="textChange">How to make a Low-Cal Chocolate-Peanut Butter Smoothie</h1>
+
+    <h2 id="info">Ingredients</h2>
+    <ul>
+      <li id="show">Quick Weight Loss Creamy Chocolate Powder</li>
+      <li id="hide">2/3 cup Jif Peanut Butter</li>
+      <li id="toggle">1/4 cup Lactose Free Milk</li>
+      <li id="show">8oz Water</li>
+      <li id="hide">1 cup Ice</li>
+    </ul>
+
+  <div id="recepticle"></div>
+
+    <h2>Click Images for Instructions</h2>
+    <img id="image1" src="all.jpeg" width="100">
+    <img id="image2" src="ice.jpeg" width="100">
+    <img id="image3" src="Peanut.jpeg" width="100">
+    <img id="image4" src="choco.jpeg" width="100">
+    <img id="image5" src="milk.jpeg" width="100">
+    <img id="image6" src="glo.jpeg" width="100">
+    <img id="image7" src="blend.jpeg" width="100">
+    <img id="image8" src="enjoy.jpeg" width="100">
+    <div id="imageRecepticle"></div>
+    <div id="instructions1" class="instructions">Step 1: Gather all Ingredients</div>
+    <div id="instructions2" class="instructions">Step 2: Pour 1 cup of ice into blender</div>
+    <div id="instructions3" class="instructions">Step 3: Put 2/3 cup of Peanut butter into blender</div>
+    <div id="instructions4" class="instructions">Step 4: Pour Creamy Chocolate powder into blender</div>
+    <div id="instructions5" class="instructions">Step 5: Pour 1/4 cup of Lactose free milk into blender</div>
+    <div id="instructions6" class="instructions">Step 6: Pour 8 oz of water into blender</div>
+    <div id="instructions7" class="instructions">Step 7: Blend ingredients on High for 30-45 seconds</div>
+    <div id="instructions8" class="instructions">Step 8: Pour your smoothie into a cup & enjoy!</div>
+
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <!-- Local jquery script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Remote version -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        //All jquery code should be placed below
+
+        $(".instructions").hide();
+
+
+
+        $("body").css("background-color", "#A859FF");
+        $("h1").css("color", "white");
+        $("h1").css("font-size", "70px");
+        $("#textChange").css("background-color", "#E6A741");
+        $("#textChange").html("How to make a low-cal Chocolate & Peanut Butter Smoothie");
+        $("h1").css("margin", "10");
+        $("textChange").css("margin","0");
+        ;
+
+        $("h2").css("color", "#E6A741");
+
+        $("#textChange").click(function(){
+
+          $("body").css("margin 0");
+
+          $("show").css("color", "white");
+
+        });//End of textChange click
+
+        $("#info").mouseenter(function(){
+          $("#info").css("background-color", "#D1A7FF");
+          $("#recepticle").html("*TIP: results may vary based on brand selection");
+        });
+
+        $("#info").mouseleave(function(){
+          $("#recepticle").html("");
+          $("#info").css("background-color", "transparent");
+        });
+
+
+        $("#image1").click(function(){
+          $("#imageRecepticle").html('<img src="all.jpeg" width="300">');
+          $(".instructions").hide();
+
+          $("#instructions1").show();
+
+          });
+
+          $("#image2").click(function(){
+            $("#imageRecepticle").html('<img src="ice.jpeg" width="300">');
+            $(".instructions").hide();
+
+            $("#instructions2").show();
+
+        });
+        $("#image3").click(function(){
+          $("#imageRecepticle").html('<img src="peanut.jpeg" width="300">');
+          $(".instructions").hide();
+
+          $("#instructions3").show()
+        });
+
+        $("#image4").click(function(){
+          $("#imageRecepticle").html('<img src="choco.jpeg" width="300">');
+          $(".instructions").hide();
+
+          $("#instructions4").show()
+
+        });
+        $("#image5").click(function(){
+          $("#imageRecepticle").html('<img src="milk.jpeg" width="300">');
+          $(".instructions").hide();
+
+          $("#instructions5").show()
+        });
+
+        $("#image6").click(function(){
+          $("#imageRecepticle").html('<img src="glo.jpeg" width="300">');
+          $(".instructions").hide();
+
+          $("#instructions6").show()
+
+        });
+
+        $("#image7").click(function(){
+          $("#imageRecepticle").html('<img src="blend.jpeg" width="300">');
+          $(".instructions").hide();
+
+          $("#instructions7").show()
+
+        });
+
+        $("#image8").click(function(){
+          $("#imageRecepticle").html('<img src="enjoy.jpeg" width="300">');
+          $(".instructions").hide();
+
+          $("#instructions8").show()
+        });
+
+      });// End of document ready
+
+    </script>
+
+  </body>
+
+
+</html>
