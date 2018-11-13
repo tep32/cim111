@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<script type="text/javascript" src="jquery.zoom-scroller.js"></script>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #fff;
+      padding: 0;
+      text-align: center;
+      font-family: 'Open Sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizelegibility;
+    }
+
+    a {
+      color: black;
+    }
+
+    .header {
+      padding: 30px 0 0;
+      float: left;
+      width: 100%;
+      background: white;
+    }
+
+    .wrapper {
+    	height: auto !important;
+    	height: 100%;
+    	margin: 0 auto;
+    	overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #999;
+      margin-bottom: 5px;
+      font-size: 70px;
+      font-weight: 100;
+    }
+    h2 {
+      padding: 00px 20px 30px 20px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      letter-spacing: 0px;
+      color: #888;
+      font-size: 20px;
+      line-height: 160%;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+
+    .pointer {
+      color: #00B0FF;
+      font-family: 'Pacifico';
+      font-size: 24px;
+      margin-top: 15px;
+      position: absolute;
+      top: 130px;
+      right: -40px;
+    }
+    .pointer2 {
+      color: #00B0FF;
+      font-family: 'Pacifico';
+      font-size: 24px;
+      margin-top: 15px;
+      position: absolute;
+      top: 130px;
+      left: -40px;
+    }
+    pre {
+      margin: 80px auto;
+    }
+    pre code {
+      padding: 35px;
+      border-radius: 5px;
+      font-size: 15px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      max-width: 500px;
+    }
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+		.main {
+	position: relative;
+}
+
+.zoom-images {
+	width: 25%;
+	height: 150px;
+	margin: 2%;
+	display: block;
+	position: relative;
+	float: left;
+	width: 26%;
+	height: 215px;
+}
+.zoom-images .info {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.35);
+	padding: 20px;
+	text-align: center;
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.zoom-images .info h1 {
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	margin: 55px 0 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0;
+
+}
+.zoom-images .info h1 a {
+ color: #fff;
+}
+.zoom-images .info h2 {
+	margin-top: 0;
+	color: white;
+	font-size: 14px;
+	font-family: georgia;
+	font-style: italic;
+	
+}
+.zoom-group {
+	position: relative;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.zoom-group .zoom-images:first-child {
+	width: 66%;
+	height: 469px;
+}
+.zoom-group .zoom-images:first-child h1 {
+	margin-top: 190px;
+	font-size: 30px;
+}
+
+.container {
+		width: 980px;
+		margin: 0 auto;
+	}
+
+	.page-container {
+		float: left;
+		width: 100%;
+		margin: 0 auto 300px;
+		position: relative;
+	}
+
+	.header{
+		overflow: hidden;
+		clear: both;
+	}
+
+		</style>
+
+		<script>
+		  $(document).ready(function(){
+		//All jquery code should be placed below
+	$("h1").css("background-color", "#80F7F5");
+	$(".zoom-images").zoomScroller({
+		initZoom: 1.05,
+		animationTime: 1500,
+		onZoom: function(el, zoomType) {
+			if (zoomType == "in") {
+				el.find(".info").fadeIn("slow");
+			} else {
+				el.find(".info").fadeOut("slow");
+			}
+
+		}
+	});
+}); // End of document ready
+
+</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    <div class="header">
+        <h1>Welcome to Oia</h1>
+        <h2>An inside look at Oia, one of Greece's most beautiful hillside attractions. Millions of people from all over the world<br>
+					 venture out to the city of Oia, Santorini to behold the infamous sunsets and breathtaking views.
+					 <br> However, the summer in Oia is crowded and you may get lost if you don't know what to look for.
+					 <br> Fear not, fellow travelers, below I have designed the perfect trip in Oia just for you.<br>
+				  Bon Voyage!</h2>
+
+
+    	<div class="container">
+  	    <div class="zoom-group">
+  	      <div class="zoom-images">
+  	        <img src="domes.jpg">
+  	        <a href="https://www.cheerfulegg.com/2017/05/07/how-to-find-the-famous-three-blue-domes-in-santorini/" class="info" target="_blank"><h1>The Blue Domes</h1><h2>Searching for the perfect "Blue Dome" picture spot</h2></a>
+  	      </div>
+  	      <div class="zoom-images">
+  	        <img src="sunrise.jpg">
+  	        <a href="https://www.tripadvisor.com/AttractionProductReview-g189433-d11455356-Sunset_Sailing_Catamaran_Cruise_in_Santorini_with_BBQ_and_Drinks-Santorini_Cyclade.html" class="info" target="_blank"><h1>Sailing at Sunrise</h1><h2>Fun activities in Oia</h2></a>
+  	      </div>
+  	      <div class="zoom-images">
+  	        <img src="views.jpg">
+  	       <a href="http://www.santorini365.com/shopping-in-santorini?shopping_category=Clothing_Accessories" class="info" target="_blank"><h1>Shopping with a View</h1><h2>Picteresque Shops of Oia</h2></a>
+  	      </div>
+  	    </div>
+  	    <div class="zoom-group">
+  	      <div class="zoom-images"
+  	        <img src="view.jpg">
+						<a href="http://www.terpsienoia.restaurant/" class="info" target="_blank"><h1>Terpsi Restaurant View</h1><h2>Oia Eating Hotspots</h2></a>
+  	      </div>
+  	      <div class="zoom-images">
+  	        <img src="blue.jpg">
+  	        <a href="https://chelidonia.com/" class="info" target="_blank"><h1>Chelidonia Villas & Suites</h1><h2>One of the HOTTEST Hotel in Oia</h2></a>
+  	      </div>
+  	      <div class="zoom-images">
+  	        <img src="castle.jpg">
+  	       <a href="https://www.inspirock.com/greece/oia/ekklisia-panagia-platsani-a7261210785" class="info" target="_blank"><h1>Ekklisia Panagia Platsani</h1><h2>Most Famous Church in Oia</h2></a>
+  	      </div>
+  	    </div>
+
+</body>
+</html>
