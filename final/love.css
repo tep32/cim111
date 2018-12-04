@@ -136,3 +136,25 @@ margin: 10px auto;
     height: auto;
     margin: 0 auto;
   }
+
+  .lovegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+
+  }
+  /* use for mobile */
+/*
+  .lovegrid{
+    display: block;
+    width: 100%;
+
+  }
+  */
+
+  .loveimages{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }

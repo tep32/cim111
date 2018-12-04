@@ -136,3 +136,27 @@ margin: 10px auto;
     height: auto;
     margin: 0 auto;
   }
+
+  .memoriesgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
+
+}
+/* use for mobile */
+/*
+.memoriesgrid{
+  display: block;
+  width: 100%;
+
+}
+*/
+
+
+  .memoriesimages{
+      width: 300px;
+      display: block;
+      margin: 0 auto;
+    }

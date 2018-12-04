@@ -8,6 +8,7 @@
 
  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
+
 	<script type="text/javascript" src="jquery.zoom-scroller.js"></script>
   <style>
     html {
@@ -118,14 +119,11 @@
 }
 
 .zoom-images {
-	width: 25%;
-	height: 150px;
+	width: 75%;
+	height: 350px;
 	margin: 2%;
 	display: block;
 	position: relative;
-	float: left;
-	width: 26%;
-	height: 215px;
 }
 .zoom-images .info {
 	display: none;
@@ -180,7 +178,22 @@
 .container {
 		width: 980px;
 		margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 	}
+
+  /*  use this for mobile */
+/*
+
+  .container {
+  		width: 980px;
+  		margin: 0 auto;
+      display: block;
+
+  	}
+
+    */
 
 	.page-container {
 		float: left;
@@ -236,27 +249,22 @@
 
 
     	<div class="container">
-  	    <div class="zoom-group">
   	      <div class="zoom-images">
   	        <img src="img/ports5.jpg">
   	        <a href="portraits.html" class="info" target="_blank"><h1>The "Portrait" Series</h1></a>
   	      </div>
-          <div class="zoom-group">
   	      <div class="zoom-images">
   	        <img src="img/meme.jpg">
   	        <a href="memories.html" class="info" target="_blank"><h1>The "Memories" Series</h1></a>
-  	      </div>
-          <div class="zoom-group">
-  	      <div class="zoom-images">
+          </div>
+          <div class="zoom-images">
   	        <img src="img/loves5.jpg">
   	       <a href="love.html" class="info" target="_blank"><h1>The "Love" Series</h1></a>
   	      </div>
-  	    </div>
-  	    <div class="zoom-group">
   	      <div class="zoom-images">
   	        <img src="img/abs3.jpg">
 						<a href="abstraction.html" class="info" target="_blank"><h1>The "Abstraction" Series</h1></a>
-  	      </div>
-
+          </div>
+        </div>
 </body>
 </html>
