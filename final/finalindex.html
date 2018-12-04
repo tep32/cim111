@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+	<script type="text/javascript" src="jquery.zoom-scroller.js"></script>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: black;
+      padding: 0;
+      text-align: center;
+      font-family: 'Sedgwick Ave', cursive;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizelegibility;
+    }
+
+    a {
+      color: black;
+    }
+
+    .header {
+      padding: 30px 0 0;
+      float: left;
+      width: 100%;
+      background: white;
+    }
+
+    .wrapper {
+    	height: auto !important;
+    	height: 100%;
+    	margin: 0 auto;
+    	overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #13FF37;
+      margin-bottom: 5px;
+      font-size: 70px;
+      font-weight: 100;
+			font-family: 'Sedgwick Ave', cursive;
+    }
+    h2 {
+      padding: 00px 20px 30px 20px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      letter-spacing: 0px;
+      color: #DAF022;
+      font-size: 20px;
+      line-height: 160%;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    nav {
+
+    }
+
+    .pointer {
+      color: #DAF022;
+      font-family: 'Pacifico';
+      font-size: 24px;
+      margin-top: 15px;
+      position: absolute;
+      top: 130px;
+      right: -40px;
+    }
+    .pointer2 {
+      color: #DAF022;
+      font-family: 'Pacifico';
+      font-size: 24px;
+      margin-top: 15px;
+      position: absolute;
+      top: 130px;
+      left: -40px;
+    }
+    pre {
+      margin: 80px auto;
+    }
+    pre code {
+      padding: 35px;
+      border-radius: 5px;
+      font-size: 15px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      max-width: 500px;
+    }
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+		.main {
+	position: relative;
+}
+
+.zoom-images {
+	width: 25%;
+	height: 150px;
+	margin: 2%;
+	display: block;
+	position: relative;
+	float: left;
+	width: 26%;
+	height: 215px;
+}
+.zoom-images .info {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.35);
+	padding: 20px;
+	text-align: center;
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.zoom-images .info h1 {
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	margin: 55px 0 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0;
+
+}
+.zoom-images .info h1 a {
+ color: #9C22F0;
+}
+.zoom-images .info h2 {
+	margin-top: 0;
+	color: white;
+	font-size: 14px;
+	font-family: georgia;
+	font-style: italic;
+
+}
+.zoom-group {
+	position: relative;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.zoom-group .zoom-images:first-child {
+	width: 66%;
+	height: 469px;
+}
+.zoom-group .zoom-images:first-child h1 {
+	margin-top: 190px;
+	font-size: 30px;
+}
+
+.container {
+		width: 980px;
+		margin: 0 auto;
+	}
+
+	.page-container {
+		float: left;
+		width: 100%;
+		margin: 0 auto 300px;
+		position: relative;
+	}
+
+	.header{
+		overflow: hidden;
+		clear: both;
+	}
+
+		</style>
+
+		<!-- Local jquery script -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- Remote version -->
+		<script src="js/jquery.zoom-scroller.min.js"></script>
+
+		<script>
+		  $(document).ready(function(){
+		//All jquery code should be placed below
+	$("h2").css("color","#227FF");
+	$(".header").css("background-color", "black");
+	$(".zoom-images").zoomScroller({
+		initZoom: 1.05,
+		animationTime: 1500,
+		onZoom: function(el, zoomType) {
+			if (zoomType == "in") {
+				el.find(".info").fadeIn("slow");
+			} else {
+				el.find(".info").fadeOut("slow");
+			}
+
+		}
+	});
+}); // End of document ready
+
+</script>
+</head>
+<body>
+
+  <div class="wrapper">
+	  <div class="main">
+	    <div class="header">
+        <h1>Tai Pie</h1>
+        <h2> Welcome to my portfolio! <br>
+        I am a freelance photographer based in Miami, Florida.<br>
+        Click on the images below to view each original series.<br>
+        Photos are both digital and 35mm film. <br>
+        Enjoy!</h2>
+
+
+    	<div class="container">
+  	    <div class="zoom-group">
+  	      <div class="zoom-images">
+  	        <img src="img/ports5.jpg">
+  	        <a href="portraits.html" class="info" target="_blank"><h1>The "Portrait" Series</h1></a>
+  	      </div>
+          <div class="zoom-group">
+  	      <div class="zoom-images">
+  	        <img src="img/meme.jpg">
+  	        <a href="memories.html" class="info" target="_blank"><h1>The "Memories" Series</h1></a>
+  	      </div>
+          <div class="zoom-group">
+  	      <div class="zoom-images">
+  	        <img src="img/loves5.jpg">
+  	       <a href="love.html" class="info" target="_blank"><h1>The "Love" Series</h1></a>
+  	      </div>
+  	    </div>
+  	    <div class="zoom-group">
+  	      <div class="zoom-images">
+  	        <img src="img/abs3.jpg">
+						<a href="abstraction.html" class="info" target="_blank"><h1>The "Abstraction" Series</h1></a>
+  	      </div>
+
+</body>
+</html>
