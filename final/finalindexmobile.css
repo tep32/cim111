@@ -1,0 +1,23 @@
+@import "finalindex.html";
+
+.page-container {
+  float: left;
+  width: 100%;
+  margin: 0 auto 300px;
+  position: relative;
+}
+
+.header{
+  overflow: hidden;
+  clear: both;
+}
+
+
+/*  use this for mobile */
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    display: block;
+
+  }
